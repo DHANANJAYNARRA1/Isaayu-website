@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import JourneyTimeline from '../components/JourneyTimeline';
 
 const journey = [
   { year: '2020', label: 'ISAAYU Founded', description: 'ISAAYU was founded with a vision to revolutionize urban agriculture and smart farming.' },
@@ -93,39 +94,7 @@ const OurStoryPage = () => {
       <section className="py-24 bg-gradient-to-br from-slate-50 via-orange-50 to-green-50">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12 text-green-800">ISAAYU JOURNEY</h2>
-          {/* Desktop/Tablet: Horizontal Timeline */}
-          <div className="hidden md:flex relative items-center justify-center min-h-[220px] w-full max-w-full overflow-x-auto scrollbar-thin scrollbar-thumb-green-200 scrollbar-track-slate-100" style={{ WebkitOverflowScrolling: 'touch' }}>
-            <svg
-              id="journey-svg"
-              width="100%"
-              height="220"
-              viewBox="0 0 900 220"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="absolute left-0 top-0 z-0 min-w-[600px] sm:min-w-[700px] md:min-w-[900px] w-full h-[220px]"
-              style={{ minWidth: 600 }}
-            >
-              <path id="journey-path" d="M 60 180 Q 200 40 450 110 Q 700 180 840 40" stroke="#a3e635" strokeWidth="6" fill="none" />
-            </svg>
-            <AnimatedJourneyDot fixedWidth={900} vertical={false} />
-            <JourneyNodes fixedWidth={900} vertical={false} />
-          </div>
-          {/* Mobile: Vertical Timeline */}
-          <div className="flex md:hidden relative items-center justify-center min-h-[500px] w-full max-w-full overflow-y-auto scrollbar-thin scrollbar-thumb-green-200 scrollbar-track-slate-100" style={{ WebkitOverflowScrolling: 'touch', height: 500 }}>
-            <svg
-              id="journey-svg-vertical"
-              width="60"
-              height="500"
-              viewBox="0 0 60 500"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="absolute left-1/2 -translate-x-1/2 top-0 z-0 w-[60px] h-[500px]"
-            >
-              <path id="journey-path-vertical" d="M 30 40 Q 30 250 30 460" stroke="#a3e635" strokeWidth="6" fill="none" />
-            </svg>
-            <AnimatedJourneyDot fixedWidth={60} vertical={true} />
-            <JourneyNodes fixedWidth={60} vertical={true} />
-          </div>
+          <JourneyTimeline />
         </div>
       </section>
     </div>

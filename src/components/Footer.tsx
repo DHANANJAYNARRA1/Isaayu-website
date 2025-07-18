@@ -3,7 +3,7 @@ import { Leaf, ArrowRight, Facebook, Instagram, Twitter, Linkedin, Youtube, QrCo
 import aIdeaLogo from '../assets/a-idea.png';
 import naarmLogo from '../assets/naarmlogo.png';
 import icarLogo from '../assets/icarlogo.png';
-
+import startuoinidaLogo from '../assets/startupindialogo.png';
 interface FooterProps {
   setCurrentPage: (page: string) => void;
 }
@@ -34,8 +34,9 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
 
       {/* Incubators Row above the main footer grid */}
       <div className="w-full flex flex-col items-center mb-4">
-        <span className="text-xl font-bold mb-6 text-orange-400">Our Incubators</span>
+        <span className="text-xl font-bold mb-6 text-orange-400">Our Incubators at</span>
         <div className="flex gap-8 items-center">
+        <img src={startuoinidaLogo} alt="A-IDEA" className="h-20 md:h-24 w-auto object-contain rounded bg-white p-2 shadow" />
           <img src={aIdeaLogo} alt="A-IDEA" className="h-20 md:h-24 w-auto object-contain rounded bg-white p-2 shadow" />
           <img src={naarmLogo} alt="NAARM" className="h-20 md:h-24 w-auto object-contain rounded bg-white p-2 shadow" />
           <img src={icarLogo} alt="ICAR" className="h-20 md:h-24 w-auto object-contain rounded bg-white p-2 shadow" />

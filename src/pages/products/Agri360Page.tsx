@@ -67,7 +67,7 @@ const Agri360Page: React.FC<Agri360PageProps> = ({ setCurrentPage }) => {
               <span className="text-orange-500">AGRI</span><span className="text-green-800">360</span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-bold text-green-800 mb-8 italic">
-              Complete Agricultural Solution with 360° Farm Management
+              Future Of Agriculture
             </h2>
             <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
               Experience the future of agriculture with our comprehensive Agri360 solution. This all-in-one platform 

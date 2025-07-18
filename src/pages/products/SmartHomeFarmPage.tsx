@@ -64,11 +64,10 @@ const SmartHomeFarmPage: React.FC<SmartHomeFarmPageProps> = ({ setCurrentPage })
               <span className="text-orange-500">SMART</span> <span className="text-green-800">HOME FARM</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
-              Discover the ultimate solution for home farming with our Plug & Play Terrace Farm, designed 
-              for your family's nutritional needs with comprehensive IoT support.
+              Ever wished you could just step outside and pick your own fresh veggies and herbs? With our Smart Home Farm, you can! We’ve made it super easy for families to grow their own food right on the terrace—no green thumb required. Everything’s set up for you, and our tech keeps things running smoothly, so you can enjoy real, homegrown goodness every day.
             </p>
             <div className="bg-gradient-to-r from-green-600 to-orange-600 text-white px-8 py-4 rounded-2xl inline-block font-bold text-xl shadow-xl">
-              Transform your Terrace into a Thriving Urban Farm and Embrace Healthy Living!
+              Turn your terrace into a mini farm and enjoy the taste of truly fresh food at home!
             </div>
           </div>
 
@@ -89,7 +88,7 @@ const SmartHomeFarmPage: React.FC<SmartHomeFarmPageProps> = ({ setCurrentPage })
           <div className="bg-white rounded-2xl shadow-lg p-8 max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-green-800 mb-4">About Smart Home Farm</h2>
             <p className="text-lg text-gray-700">
-              The Smart Home Farm is a plug & play terrace farming solution designed for urban families. It features IoT-based automation, expert support, and a user-friendly interface, making it easy to grow fresh, nutritious produce at home. Enjoy sustainable urban farming with minimal effort and maximum results.
+              We know city life can make it tough to eat fresh, so we created the Smart Home Farm—a simple, plug-and-play way to grow your own food at home. With easy automation, expert help just a call away, and a friendly app, you’ll be amazed at how simple (and fun!) it is to harvest your own veggies and herbs. No more guessing, no more hassle—just real food, grown by you.
             </p>
           </div>
         </div>
@@ -118,12 +117,7 @@ const SmartHomeFarmPage: React.FC<SmartHomeFarmPageProps> = ({ setCurrentPage })
               <div className="bg-gradient-to-br from-green-50 to-orange-50 rounded-3xl p-8 shadow-xl border border-green-100">
                 <h3 className="text-2xl font-bold text-green-800 mb-6">Product Description</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Discover the ultimate solution for home farming with our Plug & Play Terrace Farm, designed 
-                  for your family's nutritional needs. We provide comprehensive support, from personalized nutritional 
-                  planning to the complete setup of your terrace garden, all maintained with our expert IoT systems with user 
-                  friendly mobile application and alert system. Enjoy effortless vegetable and fruit cultivation in both Soil 
-                  and Soilless methods with continuous guidance from our expert support team, ensuring you grow 
-                  nutrient-rich produce right at your doorstep.
+                  Imagine picking your salad right from your own terrace! Our Smart Home Farm is designed for busy families who want to eat better without the fuss. We’ll help you plan what to grow, set everything up, and our smart system keeps your plants happy—whether you prefer soil or soilless. Plus, our team is always here to answer your questions and make sure your garden thrives. It’s fresh food, made easy.
                 </p>
               </div>
             </div>
@@ -178,7 +172,7 @@ const SmartHomeFarmPage: React.FC<SmartHomeFarmPageProps> = ({ setCurrentPage })
               Smart Home Farm Gallery
             </h2>
             <p className="text-xl md:text-2xl text-gray-600">
-              Real installations showcasing our smart terrace farming solutions
+              Take a look at some of our real-life terrace farms! These are actual homes where families are now enjoying their own fresh harvests, thanks to our Smart Home Farm setup.
             </p>
           </div>
 
@@ -203,8 +197,7 @@ const SmartHomeFarmPage: React.FC<SmartHomeFarmPageProps> = ({ setCurrentPage })
             Ready to Start Your Smart Home Farm?
           </h2>
           <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto">
-            Transform your terrace into a thriving urban farm today. 
-            Get personalized consultation and professional installation.
+            Want to see how easy it is to grow your own food? Let’s chat! We’ll help you get started and handle the setup, so you can enjoy your own homegrown harvest in no time.
           </p>
           <div className="flex justify-center">
             <button
