@@ -1,10 +1,10 @@
-import heroImg from '../../assets/images/exp1.jpg';
-import gallery1 from '../../assets/images/exp1.jpg';
-import gallery2 from '../../assets/images/exp2.jpg';
-import gallery3 from '../../assets/images/exp3.jpg';
-import gallery4 from '../../assets/images/exp4.jpg';
-import gallery5 from '../../assets/images/exp5.jpg';
-import gallery6 from '../../assets/images/exp6.jpg';
+const heroImg = '/assets/images/exp1.jpg';
+const gallery1 = '/assets/images/exp1.jpg';
+const gallery2 = '/assets/images/exp2.jpg';
+const gallery3 = '/assets/images/exp3.jpg';
+const gallery4 = '/assets/images/exp4.jpg';
+const gallery5 = '/assets/images/exp5.jpg';
+const gallery6 = '/assets/images/exp6.jpg';
 
 const ExperientialFarmingProgramPage = () => (
   <div className="pt-20">

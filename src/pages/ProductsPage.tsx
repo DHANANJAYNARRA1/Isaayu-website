@@ -70,14 +70,14 @@ const ProductsPage: React.FC<ProductsPageProps> = ({ setCurrentPage }) => {
             <div className="inline-block bg-gradient-to-r from-orange-100 to-green-100 text-orange-600 px-8 py-3 rounded-full font-bold mb-8 text-lg shadow-lg">
               Our Products
             </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-green-800 mb-8 leading-tight">
+            <h1 className="text-2xl md:text-5xl lg:text-7xl font-semibold text-green-800 mb-4 md:mb-8 leading-tight">
               <span className="text-orange-500">SMART</span> HOME FARM<br/>
               <span className="text-orange-500">GROW</span> YOUR GREENS<br/>
               <span className="text-orange-500">URBAN</span> WATER MANAGEMENT<br/>
               <span className="text-orange-500">SMARTSCAPES</span><br/>
               <span className="text-orange-500">AGRI360</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-base md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Discover our complete range of smart farming products designed to revolutionize 
               urban agriculture with cutting-edge IoT technology and automation.
             </p>

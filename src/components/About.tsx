@@ -5,9 +5,9 @@ const About = () => {
     <section id="about-us" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Who We Are</h2>
+          <h2 className="text-2xl md:text-4xl font-semibold text-gray-800 mb-2 md:mb-4">Who We Are</h2>
           <div className="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Isaayu is a forward-thinking agri-tech company dedicated to revolutionizing agriculture through IoT solutions. We empower urban gardeners, farmers, and rural communities with smart automation, data-driven insights, and sustainable practices.
           </p>
         </div>
@@ -17,7 +17,7 @@ const About = () => {
             <img
               src="https://images.pexels.com/photos/4505170/pexels-photo-4505170.jpeg?auto=compress&cs=tinysrgb&w=800&h=600"
               alt="Smart farming technology"
-              className="rounded-lg shadow-xl w-full h-80 object-cover"
+              className="rounded-lg shadow-xl w-full h-40 md:h-80 object-cover"
             />
           </div>
           

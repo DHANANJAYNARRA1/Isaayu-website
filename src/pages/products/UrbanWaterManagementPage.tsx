@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { ArrowLeft, Droplets, Wifi, Gauge, Smartphone, CheckCircle, Star, BarChart3 } from 'lucide-react';
 
-import heroImg from '../../assets/urbanwatermanagement.jpg';
-import galleryImg1 from '../../assets/images/urban1.jpg';
-import galleryImg2 from '../../assets/images/urban2.jpg';
-import galleryImg3 from '../../assets/images/urban3.jpg';
-import galleryImg4 from '../../assets/images/urban4.jpg';
-import galleryImg5 from '../../assets/images/urban5.jpg';
-import galleryImg6 from '../../assets/images/urban6.jpg';
+const heroImg = '/assets/urbanwatermanagement.jpg';
+const galleryImg1 = '/assets/images/urban1.jpg';
+const galleryImg2 = '/assets/images/urban2.jpg';
+const galleryImg3 = '/assets/images/urban3.jpg';
+const galleryImg4 = '/assets/images/urban4.jpg';
+const galleryImg5 = '/assets/images/urban5.jpg';
+const galleryImg6 = '/assets/images/urban6.jpg';
 import QuoteModal from '../../components/QuoteModal';
 
 interface UrbanWaterManagementPageProps {
@@ -59,18 +59,18 @@ const UrbanWaterManagementPage: React.FC<UrbanWaterManagementPageProps> = ({ set
             <div className="inline-block bg-gradient-to-r from-green-100 to-orange-100 text-green-700 px-8 py-3 rounded-full font-bold mb-8 text-lg">
               Urban Water Management
             </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
+            <h1 className="text-2xl md:text-5xl lg:text-7xl font-semibold mb-4 md:mb-8">
               <span className="text-orange-500">URBAN</span> <span className="text-green-800">WATER MANAGEMENT</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
+            <p className="text-base md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-4 md:mb-8">
               Take control of your water usage with our smart, automated solutions for urban environments. Monitor, manage, and optimize your water resources efficiently and sustainably.
             </p>
-            <div className="bg-white text-green-700 px-8 py-4 rounded-2xl inline-block font-bold text-xl shadow-md border border-green-200">
+            <div className="bg-white text-green-700 px-4 md:px-8 py-2 md:py-4 rounded-2xl inline-block font-semibold md:font-bold text-base md:text-xl shadow-md border border-green-200">
               Make your city smarter, greener, and more water-efficient!
             </div>
           </div>
           <div className="max-w-6xl mx-auto">
-            <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl h-96 md:h-[500px] flex items-center justify-center shadow-2xl border border-gray-200">
+            <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl h-48 md:h-96 flex items-center justify-center shadow-2xl border border-gray-200">
               <img
                 src={heroImg}
                 alt="Urban Water Management Setup"

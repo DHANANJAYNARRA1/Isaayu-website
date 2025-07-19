@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Leaf, Heart, Sprout, Home, Recycle, ArrowRight, Shield } from 'lucide-react';
-import illustrativeImg from '../assets/illustrative.jpg';
+
+const illustrativeImg = '/assets/illustrative.jpg';
 
 const UrbanCultivator = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -104,9 +105,9 @@ const UrbanCultivator = () => {
         <div className="grid md:grid-cols-3 gap-8 items-center">
           {/* Left: THE GREEN AFFAIR */}
           <div className="text-left md:text-left text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-green-800 mb-4">THE GREEN AFFAIR</h2>
-            <p className="text-lg text-gray-700 mb-4">There is something so satisfying about eating Freshly Harvested Greens & Vegetables</p>
-            <div className="font-bold text-green-700 space-y-1">
+            <h2 className="text-2xl md:text-4xl font-semibold text-green-800 mb-2 md:mb-4">THE GREEN AFFAIR</h2>
+            <p className="text-base md:text-lg text-gray-700 mb-2 md:mb-4">There is something so satisfying about eating Freshly Harvested Greens & Vegetables</p>
+            <div className="font-semibold text-green-700 space-y-1 text-sm md:text-base">
               <div>Grown at home!</div>
               <div>Grown with love!</div>
             </div>
@@ -114,13 +115,13 @@ const UrbanCultivator = () => {
 
           {/* Center: Illustration Image */}
           <div className="flex justify-center">
-            <img src={illustrativeImg} alt="Illustration" className="max-h-72 md:max-h-96 w-auto rounded-xl shadow-lg object-contain" />
+            <img src={illustrativeImg} alt="Illustration" className="max-h-40 md:max-h-96 w-auto rounded-xl shadow-lg object-contain" />
           </div>
 
           {/* Right: ISAAYU AND YOU */}
           <div className="text-right md:text-right text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-green-800 mb-4">ISAAYU AND YOU</h2>
-            <p className="text-lg text-gray-700 mb-4">
+            <h2 className="text-2xl md:text-4xl font-semibold text-green-800 mb-2 md:mb-4">ISAAYU AND YOU</h2>
+            <p className="text-base md:text-lg text-gray-700 mb-2 md:mb-4">
               Ever Imagined Farming without getting your hands dirty? Farming without soil and manure? Farming within the little space available at home? Isaayu brings to you the ease of home farming at your doorstep with our <span className="text-orange-500 font-bold">"Grow Your Greens"</span> Home Kits. Inspiring a green and sustainable living!
             </p>
           </div>

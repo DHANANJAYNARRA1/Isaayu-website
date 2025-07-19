@@ -14,31 +14,31 @@ const Hero: React.FC<HeroProps> = ({ setCurrentPage: _ }) => {
   // Updated carousel with accurate product descriptions and relevant images
   const carouselImages = [
     {
-      src: "/src/assets/terracegarden.jpg", // <-- Place your terrace garden image path here
+      src: "/assets/terracegarden.jpg", // <-- Place your terrace garden image path here
       title: "Smart Home Farm - Terrace Gardens",
       subtitle: "Automated Terrace Farming Solutions",
       description: "Transform your terrace into a thriving automated garden with customized farming systems for your family's nutritional needs"
     },
     {
-      src: "/src/assets/Hydroponic.webp", // <-- Place your Grow Your Greens image path here
+      src: "/assets/Hydroponic.webp", // <-- Place your Grow Your Greens image path here
       title: "Grow Your Greens - Hydroponic Balcony Systems",
       subtitle: "Automated Nutrient Dosing for Balconies",
       description: "Hydroponic systems with automatic water and nutrition delivery for fresh greens right on your balcony"
     },
     {
-      src: "/src/assets/watermanagement.jpg", // <-- Place your Urban Water Management image path here
+      src: "/assets/watermanagement.jpg", // <-- Place your Urban Water Management image path here
       title: "Urban Water Management - Smart Home Control",
       subtitle: "Water & Electricity Monitoring via Mobile",
       description: "Control and monitor your home's water usage, save electricity, and manage everything through your mobile app"
     },
     {
-      src: "/src/assets/smartscape.JPEG", // <-- Place your Smartscapes image path here
+      src: "/assets/smartscape.JPEG", // <-- Place your Smartscapes image path here
       title: "Smartscapes - Large Landscape Automation",
       subtitle: "Sensor-Based Irrigation for Open Lawns",
       description: "Fully automated watering systems for universities, parks, and large open spaces with smart sensors and scheduling"
     },
     {
-      src: "/src/assets/agri360.jpg", // <-- Place your Agri360 image path here
+      src: "/assets/agri360.jpg", // <-- Place your Agri360 image path here
       title: "Agri360 - Complete Farm Automation",
       subtitle: "NPK Auto-Dosing for Agricultural Fields",
       description: "Complete agricultural solution with automatic NPK dosing and comprehensive farm management for large-scale farming"
@@ -75,7 +75,7 @@ const Hero: React.FC<HeroProps> = ({ setCurrentPage: _ }) => {
 
   return (
     <>
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section id="home" className="relative min-h-[60vh] md:min-h-screen flex items-center justify-center overflow-hidden">
         {/* Full Screen Carousel */}
         <div className="absolute inset-0 z-0">
           <div className="relative w-full h-full overflow-hidden">
@@ -84,27 +84,18 @@ const Hero: React.FC<HeroProps> = ({ setCurrentPage: _ }) => {
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
               {carouselImages.map((image, index) => (
-                <div key={index} className="w-full flex-shrink-0 relative h-full">
-                  <div className="w-full h-full relative flex items-center justify-center">
-                    {image.src ? (
+                image.src ? (
+                  <div key={index} className="w-full flex-shrink-0 relative h-full">
+                    <div className="w-full h-full relative flex items-center justify-center">
                       <img
                         src={image.src}
                         alt={image.title}
                         className="w-full h-full object-cover"
                       />
-                    ) : (
-                      <div className="w-full h-full bg-gradient-to-br from-green-100 to-orange-100 flex items-center justify-center">
-                        <div className="text-center text-green-600 max-w-md">
-                          <div className="text-6xl mb-4">🌱</div>
-                          <p className="text-2xl font-bold mb-2">{image.title}</p>
-                          <p className="text-lg">{image.subtitle}</p>
-                          <p className="text-sm mt-4 text-gray-600">Upload high-resolution {image.title.split(' - ')[0]} image here</p>
-                        </div>
-                      </div>
-                    )}
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
+                    </div>
                   </div>
-                </div>
+                ) : null
               ))}
             </div>
           </div>
@@ -145,7 +136,7 @@ const Hero: React.FC<HeroProps> = ({ setCurrentPage: _ }) => {
             <div className="inline-flex items-center gap-3 bg-white/15 backdrop-blur-md border border-white/30 rounded-full px-8 py-4 mb-8 shadow-xl">
               <div className="w-8 h-8 rounded-full overflow-hidden">
                 <img 
-                  src="/src/assets/IsaayuLogo_HD.png" 
+                  src="/assets/IsaayuLogo_HD.png" 
                   alt="ISAAYU Logo" 
                   className="w-full h-full object-contain"
                 />
@@ -156,15 +147,15 @@ const Hero: React.FC<HeroProps> = ({ setCurrentPage: _ }) => {
 
             {/* Dynamic Content Based on Current Slide */}
             <div className="transition-all duration-500">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white drop-shadow-2xl">
+              <h1 className="text-xl md:text-5xl lg:text-6xl font-semibold mb-4 md:mb-6 leading-tight text-white drop-shadow-2xl">
                 {carouselImages[currentSlide].title}
               </h1>
               
-              <p className="text-xl md:text-2xl mb-8 text-orange-400 font-bold drop-shadow-lg">
+              <p className="text-base md:text-2xl mb-4 md:mb-8 text-orange-400 font-semibold drop-shadow-lg">
                 {carouselImages[currentSlide].subtitle}
               </p>
               
-              <p className="text-lg md:text-xl mb-12 text-white/95 leading-relaxed max-w-3xl drop-shadow-lg">
+              <p className="text-sm md:text-xl mb-6 md:mb-12 text-white/95 leading-relaxed max-w-3xl drop-shadow-lg">
                 {carouselImages[currentSlide].description}
               </p>
             </div>

@@ -111,24 +111,6 @@ const EventsPage = () => {
                       <span className="font-medium">{event.images} Photos Available</span>
                     </div>
                   </div>
-                  
-                  <div className="lg:col-span-1">
-                    <div className="grid grid-cols-2 gap-4">
-                      {[...Array(Math.min(4, event.images))].map((_, imgIndex) => (
-                        <div key={imgIndex} className="bg-gray-200 rounded-xl h-24 flex items-center justify-center">
-                          <div className="text-center text-gray-500 text-xs">
-                            <Calendar size={16} className="mx-auto mb-1" />
-                            <p>Event Photo {imgIndex + 1}</p>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                    {event.images > 4 && (
-                      <p className="text-center text-gray-500 text-sm mt-2">
-                        +{event.images - 4} more photos
-                      </p>
-                    )}
-                  </div>
                 </div>
               </div>
             ))}
@@ -152,15 +134,7 @@ const EventsPage = () => {
           </div>
 
           <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {[...Array(installations.images)].map((_, index) => (
-              <div key={index} className="bg-gray-200 rounded-2xl h-48 flex items-center justify-center hover:shadow-lg transition-shadow cursor-pointer">
-                <div className="text-center text-gray-500">
-                  <Award size={24} className="mx-auto mb-2" />
-                  <p className="text-sm font-medium">Installation {index + 1}</p>
-                  <p className="text-xs">Upload photo here</p>
-                </div>
-              </div>
-            ))}
+            {/* No installation photo placeholders */}
           </div>
         </div>
       </section>

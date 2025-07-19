@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Leaf, ArrowRight, Facebook, Instagram, Twitter, Linkedin, Youtube, QrCode, Phone, Mail, MapPin, Globe } from 'lucide-react';
-import aIdeaLogo from '../assets/a-idea.png';
-import naarmLogo from '../assets/naarmlogo.png';
-import icarLogo from '../assets/icarlogo.png';
-import startuoinidaLogo from '../assets/startupindialogo.png';
+const aIdeaLogo = '/assets/a-idea.png';
+const naarmLogo = '/assets/naarmlogo.png';
+const icarLogo = '/assets/icarlogo.png';
+const startuoinidaLogo = '/assets/startupindialogo.png';
 interface FooterProps {
   setCurrentPage: (page: string) => void;
 }
@@ -36,10 +36,10 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
       <div className="w-full flex flex-col items-center mb-4">
         <span className="text-xl font-bold mb-6 text-orange-400">Our Incubators at</span>
         <div className="flex gap-8 items-center">
-        <img src={startuoinidaLogo} alt="A-IDEA" className="h-20 md:h-24 w-auto object-contain rounded bg-white p-2 shadow" />
-          <img src={aIdeaLogo} alt="A-IDEA" className="h-20 md:h-24 w-auto object-contain rounded bg-white p-2 shadow" />
-          <img src={naarmLogo} alt="NAARM" className="h-20 md:h-24 w-auto object-contain rounded bg-white p-2 shadow" />
-          <img src={icarLogo} alt="ICAR" className="h-20 md:h-24 w-auto object-contain rounded bg-white p-2 shadow" />
+        <img src={startuoinidaLogo} alt="A-IDEA" className="h-12 md:h-20 w-20 md:w-32 object-contain rounded bg-white p-1 md:p-2 shadow" />
+          <img src={aIdeaLogo} alt="A-IDEA" className="h-12 md:h-20 w-20 md:w-32 object-contain rounded bg-white p-1 md:p-2 shadow" />
+          <img src={naarmLogo} alt="NAARM" className="h-12 md:h-20 w-20 md:w-32 object-contain rounded bg-white p-1 md:p-2 shadow" />
+          <img src={icarLogo} alt="ICAR" className="h-12 md:h-20 w-20 md:w-32 object-contain rounded bg-white p-1 md:p-2 shadow" />
         </div>
       </div>
       {/* Main Footer */}

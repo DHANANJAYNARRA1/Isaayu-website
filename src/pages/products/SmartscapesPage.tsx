@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { ArrowLeft, Cloud, Wifi, Gauge, Smartphone, CheckCircle, Star, TreePine, Droplets } from 'lucide-react';
-import heroImg from '../../assets/images/scape (1).JPEG.jpg';
-import galleryImg1 from '../../assets/images/scape (1).JPEG.jpg';
-import galleryImg2 from '../../assets/images/scape (2).JPEG.jpg';
-import galleryImg3 from '../../assets/images/scape (3).JPEG.jpg';
-import galleryImg4 from '../../assets/images/scape (4).JPEG.jpg';
-import galleryImg5 from '../../assets/images/scape (5).JPEG.jpg';
-import galleryImg6 from '../../assets/images/scape (6).JPEG.jpg';
+const heroImg = '/assets/images/scape (1).JPEG.jpg';
+const galleryImg1 = '/assets/images/scape (1).JPEG.jpg';
+const galleryImg2 = '/assets/images/scape (2).JPEG.jpg';
+const galleryImg3 = '/assets/images/scape (3).JPEG.jpg';
+const galleryImg4 = '/assets/images/scape (4).JPEG.jpg';
+const galleryImg5 = '/assets/images/scape (5).JPEG.jpg';
+const galleryImg6 = '/assets/images/scape (6).JPEG.jpg';
 import QuoteModal from '../../components/QuoteModal';
 
 interface SmartscapesPageProps {
@@ -68,26 +68,26 @@ const SmartscapesPage: React.FC<SmartscapesPageProps> = ({ setCurrentPage }) => 
             <div className="inline-block bg-gradient-to-r from-teal-100 to-green-100 text-teal-600 px-8 py-3 rounded-full font-bold mb-8 text-lg">
               Smartscapes
             </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
+            <h1 className="text-2xl md:text-5xl lg:text-7xl font-semibold mb-4 md:mb-8">
               <span className="text-orange-500">SMART</span><span className="text-green-800">SCAPES</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-700 mb-8 italic">
+            <h2 className="text-lg md:text-2xl font-semibold text-gray-700 mb-4 md:mb-8 italic">
               Smart Irrigation Systems for Large Landscapes:
             </h2>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
+            <p className="text-base md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-4 md:mb-8">
               Revitalize large landscapes with our IoTpowered Smart Irrigation Systems. Equipped with advanced 
               water-level sensing, moisture sensors, and IoT & AI management, it ensures precise, efficient watering 
               tailored to your plants' needs. Customizable schedules and real-time data prevent over or under watering, 
               making lush, vibrant landscapes effortless to maintain.
             </p>
-            <div className="bg-gradient-to-r from-teal-600 to-green-600 text-white px-8 py-4 rounded-2xl inline-block font-bold text-xl shadow-xl">
+            <div className="bg-gradient-to-r from-teal-600 to-green-600 text-white px-4 md:px-8 py-2 md:py-4 rounded-2xl inline-block font-semibold md:font-bold text-base md:text-xl shadow-xl">
               Transform your landscape management experience with IoT connectivity and achieve lush, vibrant surroundings with minimal effort and maximum efficiency!
             </div>
           </div>
 
           {/* Hero Image Placeholder */}
           <div className="max-w-6xl mx-auto">
-            <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl h-96 md:h-[500px] flex items-center justify-center shadow-2xl border border-gray-200">
+            <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl h-48 md:h-96 flex items-center justify-center shadow-2xl border border-gray-200">
             <img
                 src={heroImg}
                 alt="Smart Home Farm Setup"

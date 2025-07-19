@@ -98,7 +98,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, setCurrentPage }) 
           >
             <div className="w-16 h-16 rounded-xl overflow-hidden">
               <img 
-                src="/src/assets/IsaayuLogo_HD.png" 
+                src="/assets/IsaayuLogo_HD.png" 
                 alt="ISAAYU Logo" 
                 className="w-full h-full object-contain"
               />

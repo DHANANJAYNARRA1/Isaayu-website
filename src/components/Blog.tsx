@@ -32,9 +32,9 @@ const Blog = () => {
     <section id="blog" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Latest Insights</h2>
+          <h2 className="text-2xl md:text-4xl font-semibold text-gray-800 mb-2 md:mb-4">Latest Insights</h2>
           <div className="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto">
             Stay updated with the latest trends, tips, and innovations in smart agriculture
           </p>
         </div>
@@ -46,7 +46,7 @@ const Blog = () => {
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-full h-32 md:h-48 object-cover hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute top-4 left-4 bg-emerald-600 text-white px-3 py-1 rounded-full text-sm font-medium">
                   {post.category}

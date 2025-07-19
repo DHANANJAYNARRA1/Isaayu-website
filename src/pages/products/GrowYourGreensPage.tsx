@@ -1,12 +1,12 @@
 import React from 'react';
 import { ArrowLeft, Beaker, Wifi, Lightbulb, Smartphone, CheckCircle, Star } from 'lucide-react';
-import heroImg from '../../assets/images/hydro5.jpg';
-import galleryImg1 from '../../assets/images/hydro.jpeg';
-import galleryImg2 from '../../assets/images/hydro1.jpeg';
-import galleryImg3 from '../../assets/images/hydro2.jpeg';
-import galleryImg4 from '../../assets/images/hydro3.jpg';
-import galleryImg5 from '../../assets/images/hydro4.jpg';
-import galleryImg6 from '../../assets/growyougreen.jpg';
+const heroImg = '/assets/images/hydro5.jpg';
+const galleryImg1 = '/assets/images/hydro.jpeg';
+const galleryImg2 = '/assets/images/hydro1.jpeg';
+const galleryImg3 = '/assets/images/hydro2.jpeg';
+const galleryImg4 = '/assets/images/hydro3.jpg';
+const galleryImg5 = '/assets/images/hydro4.jpg';
+const galleryImg6 = '/assets/growyougreen.jpg';
 import QuoteModal from '../../components/QuoteModal';
 import { useState } from 'react';
 
@@ -60,25 +60,25 @@ const GrowYourGreensPage: React.FC<GrowYourGreensPageProps> = ({ setCurrentPage 
             <div className="inline-block bg-gradient-to-r from-emerald-100 to-green-100 text-emerald-600 px-8 py-3 rounded-full font-bold mb-8 text-lg">
               Grow Your Greens
             </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
+            <h1 className="text-2xl md:text-5xl lg:text-7xl font-semibold mb-4 md:mb-8">
               <span className="text-green-600">G</span><span className="text-orange-500">Row</span> <span className="text-green-600">Y</span><span className="text-orange-500">Our</span> <span className="text-green-800">GREENS</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-700 mb-8 italic">
+            <h2 className="text-lg md:text-2xl font-semibold text-gray-700 mb-4 md:mb-8 italic">
               Hydroponic Kits with Automated Nutrient Management System
             </h2>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
+            <p className="text-base md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-4 md:mb-8">
               Transform your balcony/indoor home spaces into a lush green oasis with our 
               Hydroponic Home Kits to "GRow YOur GREENS"! Perfect for urban gardeners living 
               in apartments, this all-in-one system makes growing fresh greens easy and efficient.
             </p>
-            <div className="bg-gradient-to-r from-emerald-600 to-green-600 text-white px-8 py-4 rounded-2xl inline-block font-bold text-xl shadow-xl">
+            <div className="bg-gradient-to-r from-emerald-600 to-green-600 text-white px-4 md:px-8 py-2 md:py-4 rounded-2xl inline-block font-semibold md:font-bold text-base md:text-xl shadow-xl">
               Elevate your gardening game with our Hydroponic Kits and enjoy fresh, home-grown greens right from your own outdoor and indoor spaces!
             </div>
           </div>
 
           {/* Hero Image Placeholder */}
           <div className="max-w-6xl mx-auto">
-            <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl h-96 md:h-[500px] flex items-center justify-center shadow-2xl border border-gray-200">
+            <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl h-48 md:h-96 flex items-center justify-center shadow-2xl border border-gray-200">
             <img
                 src={heroImg}
                 alt="Smart Home Farm Setup"

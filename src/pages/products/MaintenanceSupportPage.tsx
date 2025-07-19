@@ -1,7 +1,7 @@
-import heroImg from '../../assets/images/hydro.jpeg';
-import gallery1 from '../../assets/images/hydro.jpeg';
-import gallery2 from '../../assets/images/hydro.jpeg';
-import gallery3 from '../../assets/images/hydro.jpeg';
+const heroImg = '/assets/images/hydro.jpeg';
+const gallery1 = '/assets/images/hydro.jpeg';
+const gallery2 = '/assets/images/hydro.jpeg';
+const gallery3 = '/assets/images/hydro.jpeg';
 
 const MaintenanceSupportPage = () => (
   <div className="pt-20">

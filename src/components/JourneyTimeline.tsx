@@ -5,7 +5,7 @@ const timelineData = [
     year: '2020',
     title: 'Isaayu Founded',
     description: 'The journey of Isaayu begins.',
-    logo: '/src/assets/IsaayuLogo_HD.png',
+    logo: '/assets/IsaayuLogo_HD.png',
     color: '#00bcd4', // blue
     textColor: 'text-cyan-600',
   },
@@ -13,7 +13,7 @@ const timelineData = [
     year: '2021',
     title: 'Agri360',
     description: 'Launch of Agri360, revolutionizing agriculture.',
-    logo: '/src/assets/agri360.jpg',
+    logo: '/assets/agri360.jpg',
     color: '#4caf50', // green
     textColor: 'text-green-600',
   },
@@ -21,7 +21,7 @@ const timelineData = [
     year: '2022',
     title: 'Urban Cultivator',
     description: 'Urban Cultivator brings farming to the city.',
-    logo: '/src/assets/urban1.jpg',
+    logo: '/assets/urban1.jpg',
     color: '#ffc107', // yellow
     textColor: 'text-yellow-600',
   },
@@ -29,7 +29,7 @@ const timelineData = [
     year: '2023',
     title: 'Grow Your Greens',
     description: 'Empowering everyone to grow their own greens.',
-    logo: '/src/assets/growyougreen.jpg',
+    logo: '/assets/growyougreen.jpg',
     color: '#8e24aa', // purple
     textColor: 'text-purple-600',
   },
@@ -37,7 +37,7 @@ const timelineData = [
     year: '2024',
     title: 'Smartscapes',
     description: 'Smartscapes for sustainable landscapes.',
-    logo: '/src/assets/smartscape.JPEG',
+    logo: '/assets/smartscape.JPEG',
     color: '#f44336', // red
     textColor: 'text-red-600',
   },
@@ -45,21 +45,20 @@ const timelineData = [
     year: '2025',
     title: 'Hydroponics',
     description: 'Hydroponics for water-efficient farming.',
-    logo: '/src/assets/Hydroponic.webp',
+    logo: '/assets/Hydroponic.webp',
     color: '#3f51b5', // indigo
     textColor: 'text-indigo-600',
   },
 ];
 
-const svgWidth = 1100;
+const svgWidth = 1200;
 const svgHeight = 350;
 const startX = 80;
 const startY = 300;
-const endX = 1020;
+const endX = 1120;
 const endY = 60;
 const step = (endX - startX) / (timelineData.length - 1);
 const stepY = (endY - startY) / (timelineData.length - 1);
-
 const getMilestonePositions = () => {
   return timelineData.map((_, idx) => ({
     x: startX + idx * step,
@@ -68,22 +67,16 @@ const getMilestonePositions = () => {
 };
 
 const JourneyTimeline: React.FC = () => {
-  const positions = getMilestonePositions();
-
   return (
     <div className="w-full flex flex-col items-center">
-      {/* Desktop/Tablet: Slanted SVG Timeline */}
+      {/* Desktop/Tablet: Responsive Flex Timeline */}
       <div className="hidden md:block w-full overflow-x-auto">
         <div className="relative mx-auto" style={{ maxWidth: svgWidth, minHeight: svgHeight }}>
           <svg width={svgWidth} height={svgHeight} viewBox={`0 0 ${svgWidth} ${svgHeight}`} fill="none" className="w-full h-auto">
             <defs>
               <linearGradient id="timeline-gradient" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stopColor="#00bcd4" />
-                <stop offset="20%" stopColor="#4caf50" />
-                <stop offset="40%" stopColor="#ffc107" />
-                <stop offset="60%" stopColor="#8e24aa" />
-                <stop offset="80%" stopColor="#f44336" />
-                <stop offset="100%" stopColor="#3f51b5" />
+                <stop offset="0%" stopColor="#b0bec5" />
+                <stop offset="100%" stopColor="#90a4ae" />
               </linearGradient>
             </defs>
             <line
@@ -97,7 +90,7 @@ const JourneyTimeline: React.FC = () => {
             />
           </svg>
           {/* Milestones */}
-          {positions.map((pos, idx) => (
+          {getMilestonePositions().map((pos, idx) => (
             <div
               key={timelineData[idx].year}
               className="absolute flex flex-col items-center"
@@ -131,10 +124,10 @@ const JourneyTimeline: React.FC = () => {
           ))}
         </div>
       </div>
-      {/* Mobile: Vertical Timeline */}
+      {/* Mobile: Vertical Timeline (unchanged) */}
       <div className="block md:hidden w-full">
-        <div className="flex flex-col items-center relative">
-          <div className="absolute left-1/2 -translate-x-1/2 top-8 bottom-8 w-1 bg-gradient-to-b from-cyan-400 via-green-400 via-yellow-400 via-purple-400 via-red-400 to-indigo-400 opacity-30 z-0" style={{ height: '90%' }}></div>
+        <div className="flex flex-col items-center relative pb-16">
+          <div className="absolute left-1/2 -translate-x-1/2 top-8 bottom-8 w-1 bg-gradient-to-b from-gray-200 via-gray-100 to-gray-50 opacity-40 z-0" style={{ height: '92%' }}></div>
           {timelineData.map((item, idx) => (
             <div key={item.year} className="flex flex-col items-center mb-16 relative z-10">
               <div className="mb-2 flex justify-center">

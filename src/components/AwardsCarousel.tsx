@@ -8,7 +8,7 @@ const awards = [
     location: 'Delhi',
     year: '2025',
     description: 'Received THE AVISHKAR KISAN KRANTHI AWARD @ THE AGRITECH PAVILION, 2nd EDITION of STARTUP MAHAKUMBH.',
-    image: '/src/assets/startup-mahakumbh-award.jpeg',
+    image: '/assets/startup-mahakumbh-award.jpeg',
     color: 'from-yellow-400 to-orange-500',
     bgGradient: 'from-yellow-50 to-orange-50'
   },
@@ -18,7 +18,7 @@ const awards = [
     location: 'Coimbatore',
     year: '2024',
     description: 'Received the Award for Best Agritech Startup from World Association of Medium and Small Enterprises, Powered by MSME, GoI.',
-    image: '/src/assets/Award From WASME 2024.JPG',
+    image: '/assets/Award From WASME 2024.JPG',
     color: 'from-blue-400 to-blue-600',
     bgGradient: 'from-blue-50 to-cyan-50'
   },
@@ -28,7 +28,7 @@ const awards = [
     location: 'Hyderabad',
     year: '2024',
     description: 'Award for IoT and Automation from The Department of Horticulture, Government of Telangana.',
-    image: '/src/assets/AWARD FROM TELANGANA HORTICULTURE 2025.jpeg',
+    image: '/assets/AWARD FROM TELANGANA HORTICULTURE 2025.jpeg',
     color: 'from-green-400 to-green-600',
     bgGradient: 'from-green-50 to-emerald-50'
   },
@@ -38,7 +38,7 @@ const awards = [
     location: 'Hyderabad',
     year: '2024',
     description: 'Awards for Innovation and Technology in Urban Farming by Department of Horticulture, Government of Telangana.',
-    image: '/src/assets/Telangana Horticulture Awards - 2024.jpeg',
+    image: '/assets/Telangana Horticulture Awards - 2024.jpeg',
     color: 'from-orange-400 to-orange-600',
     bgGradient: 'from-orange-50 to-yellow-50'
   },
@@ -48,7 +48,7 @@ const awards = [
     location: 'Hyderabad',
     year: '2023',
     description: 'Award for Urban Farming Initiatives by the Department of Horticulture, Government of Telangana.',
-    image: '/src/assets/Telangana Horticulture Awards - Image 2.jpeg', // Placeholder, user will provide
+    image: '/assets/Telangana Horticulture Awards - Image 2.jpeg', // Placeholder, user will provide
     color: 'from-green-500 to-green-700',
     bgGradient: 'from-green-50 to-emerald-50'
   },
@@ -97,11 +97,11 @@ const AwardsCarousel = () => {
             <Trophy className="text-yellow-500" size={24} />
             Awards & Recognition
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-2xl md:text-5xl font-semibold mb-4 md:mb-6">
             <span className="text-green-800">Celebrating Our</span><br/>
             <span className="text-orange-500">Achievements</span>
           </h2>
-          <p className="text-slate-600 max-w-3xl mx-auto text-lg md:text-xl">
+          <p className="text-base md:text-xl text-slate-600 max-w-3xl mx-auto">
             Proud to be recognized by leading organizations for our innovation in smart agriculture and sustainable farming solutions
           </p>
         </div>
@@ -113,58 +113,60 @@ const AwardsCarousel = () => {
               className="flex transition-transform duration-1000 ease-in-out"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
-              {awards.map((award, index) => (
-                <div key={index} className="w-full flex-shrink-0">
-                  <div className={`bg-gradient-to-br ${award.bgGradient} rounded-3xl p-8 md:p-12 shadow-2xl border border-white/50 backdrop-blur-sm`}>
-                    <div className="grid lg:grid-cols-2 gap-8 items-center">
-                      {/* Award Content */}
-                      <div className="space-y-6">
-                        <div className="flex items-center gap-4">
-                          <div className={`bg-gradient-to-br ${award.color} w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg`}>
-                            <Trophy className="text-white" size={32} />
-                          </div>
-                          <div>
-                            <h3 className="text-2xl md:text-3xl font-bold text-slate-800">
-                              {award.title}
-                            </h3>
-                            <div className="text-orange-600 font-semibold text-base mt-1">{award.event}</div>
-                          </div>
-                        </div>
-                        <div className="flex items-center gap-6">
-                          <div className="flex items-center gap-2 text-slate-600">
-                            <Calendar size={16} className="text-green-500" />
-                            <span className="font-semibold">{award.year}</span>
-                          </div>
-                          <div className="flex items-center gap-2 text-slate-600">
-                            <MapPin size={16} className="text-blue-500" />
-                            <span className="font-semibold">{award.location}</span>
-                          </div>
-                        </div>
-                        <p className="text-slate-700 leading-relaxed text-lg">
-                          {award.description}
-                        </p>
-                      </div>
-                      {/* Award Image */}
-                      <div className="lg:order-first">
-                        <div className="bg-white/80 backdrop-blur-sm rounded-2xl h-80 flex items-center justify-center shadow-xl border border-white/50 overflow-hidden">
-                          {award.image ? (
-                            <img 
-                              src={award.image} 
-                              alt={award.title}
-                              className="w-full h-full object-cover rounded-2xl"
-                            />
-                          ) : (
-                            <div className="flex flex-col items-center justify-center w-full h-full text-slate-400">
-                              <ImageIcon size={64} />
-                              <span className="mt-2 text-lg">Image coming soon</span>
+              <div className="flex flex-nowrap overflow-x-auto md:overflow-x-visible">
+                {awards.map((award, index) => (
+                  <div key={index} className="min-w-[90vw] md:min-w-0 w-full flex-shrink-0">
+                    <div className={`bg-gradient-to-br ${award.bgGradient} rounded-3xl p-4 md:p-12 shadow-2xl border border-white/50 backdrop-blur-sm`}>
+                      <div className="grid lg:grid-cols-2 gap-4 md:gap-8 items-center">
+                        {/* Award Content */}
+                        <div className="space-y-3 md:space-y-6">
+                          <div className="flex items-center gap-2 md:gap-4">
+                            <div className={`bg-gradient-to-br ${award.color} w-10 h-10 md:w-16 md:h-16 rounded-2xl flex items-center justify-center shadow-lg`}>
+                              <Trophy className="text-white" size={20} md:size={32} />
                             </div>
-                          )}
+                            <div>
+                              <h3 className="text-lg md:text-3xl font-semibold md:font-bold text-slate-800">
+                                {award.title}
+                              </h3>
+                              <div className="text-orange-600 font-medium md:font-semibold text-xs md:text-base mt-1">{award.event}</div>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-6">
+                            <div className="flex items-center gap-2 text-slate-600">
+                              <Calendar size={16} className="text-green-500" />
+                              <span className="font-semibold">{award.year}</span>
+                            </div>
+                            <div className="flex items-center gap-2 text-slate-600">
+                              <MapPin size={16} className="text-blue-500" />
+                              <span className="font-semibold">{award.location}</span>
+                            </div>
+                          </div>
+                          <p className="text-slate-700 leading-relaxed text-lg">
+                            {award.description}
+                          </p>
+                        </div>
+                        {/* Award Image */}
+                        <div className="lg:order-first">
+                          <div className="bg-white/80 backdrop-blur-sm rounded-2xl h-80 flex items-center justify-center shadow-xl border border-white/50 overflow-hidden">
+                            {award.image ? (
+                              <img 
+                                src={award.image} 
+                                alt={award.title}
+                                className="w-full h-full object-cover rounded-2xl"
+                              />
+                            ) : (
+                              <div className="flex flex-col items-center justify-center w-full h-full text-slate-400">
+                                <ImageIcon size={64} />
+                                <span className="mt-2 text-lg">Image coming soon</span>
+                              </div>
+                            )}
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
 

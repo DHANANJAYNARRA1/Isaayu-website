@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { ArrowLeft, Zap, Wifi, Gauge, Smartphone, CheckCircle, Star, BarChart3, Cloud } from 'lucide-react';
-import heroImg from '../../assets/images/agri3.webp';
-import gallery1 from '../../assets/images/agri1.jpg';
-import gallery2 from '../../assets/images/agri2.jpg';
-import gallery3 from '../../assets/images/agri4.webp';
-import gallery4 from '../../assets/images/agri6.jpg';
-import gallery5 from '../../assets/images/agri7.jpg';
-import gallery6 from '../../assets/images/agri8.jpg';
+const heroImg = '/assets/images/agri3.webp';
+const gallery1 = '/assets/images/agri1.jpg';
+const gallery2 = '/assets/images/agri2.jpg';
+const gallery3 = '/assets/images/agri4.webp';
+const gallery4 = '/assets/images/agri6.jpg';
+const gallery5 = '/assets/images/agri7.jpg';
+const gallery6 = '/assets/images/agri8.jpg';
 import QuoteModal from '../../components/QuoteModal';
 
 interface Agri360PageProps {
@@ -63,24 +63,24 @@ const Agri360Page: React.FC<Agri360PageProps> = ({ setCurrentPage }) => {
             <div className="inline-block bg-gradient-to-r from-orange-100 to-green-100 text-green-700 px-8 py-3 rounded-full font-bold mb-8 text-lg">
               Agri360
             </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
+            <h1 className="text-2xl md:text-5xl lg:text-7xl font-semibold mb-4 md:mb-8">
               <span className="text-orange-500">AGRI</span><span className="text-green-800">360</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl font-bold text-green-800 mb-8 italic">
+            <h2 className="text-lg md:text-2xl font-semibold text-green-800 mb-4 md:mb-8 italic">
               Future Of Agriculture
             </h2>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
+            <p className="text-base md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-4 md:mb-8">
               Experience the future of agriculture with our comprehensive Agri360 solution. This all-in-one platform 
               combines advanced IoT sensors, AI analytics, and automated systems to provide complete farm management 
               from seed to harvest. Monitor, control, and optimize every aspect of your agricultural operations with 
               unprecedented precision and efficiency.
             </p>
-            <div className="bg-white text-green-700 px-8 py-4 rounded-2xl inline-block font-bold text-xl shadow-md border border-green-200">
+            <div className="bg-white text-green-700 px-4 md:px-8 py-2 md:py-4 rounded-2xl inline-block font-semibold md:font-bold text-base md:text-xl shadow-md border border-green-200">
               Revolutionize your farming with 360° visibility, control, and intelligence for maximum productivity and sustainability!
             </div>
           </div>
           <div className="max-w-6xl mx-auto">
-            <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl h-96 md:h-[500px] flex items-center justify-center shadow-2xl border border-gray-200">
+            <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl h-48 md:h-96 flex items-center justify-center shadow-2xl border border-gray-200">
               <img
                 src={heroImg}
                 alt="Agri360 Farm Setup"
@@ -94,8 +94,8 @@ const Agri360Page: React.FC<Agri360PageProps> = ({ setCurrentPage }) => {
       {/* Description Section */}
       <div className="container mx-auto px-4 mt-8">
         <div className="bg-white rounded-2xl shadow-lg p-8 max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-green-800 mb-4"><span className="text-orange-500">AGRI</span><span className="text-green-700">360</span></h2>
-          <p className="text-lg text-gray-700 mb-4">
+          <h2 className="text-xl md:text-3xl font-semibold text-green-800 mb-2 md:mb-4"><span className="text-orange-500">AGRI</span><span className="text-green-700">360</span></h2>
+          <p className="text-base md:text-lg text-gray-700 mb-2 md:mb-4">
             <b>Agri360</b> is a comprehensive solution for agriculture, encompassing a 360-degree approach to managing various aspects of agricultural operations. The IoT Based Automation Control System is a multifunctional automation solution designed to revolutionize farm management. With the ability to operate a variety of devices, from irrigation motors to soil sensors, Agri 360 enhances operational efficiency, safety, and productivity on farms. This comprehensive control system allows farmers to manage their equipment seamlessly, ensuring optimal performance and resource management.
           </p>
         </div>

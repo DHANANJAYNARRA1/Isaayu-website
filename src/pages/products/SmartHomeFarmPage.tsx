@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { ArrowLeft, Settings, CheckCircle, Star } from 'lucide-react';
-import heroImg from '../../assets/terracegarden.jpg';
-import galleryImg1 from '../../assets/images/hydro.jpeg';
-import galleryImg2 from '../../assets/images/hydro.jpeg';
-import galleryImg3 from '../../assets/images/hydro.jpeg';
-import galleryImg4 from '../../assets/images/hydro.jpeg';
-import galleryImg5 from '../../assets/images/hydro.jpeg';
-import galleryImg6 from '../../assets/images/hydro.jpeg';
+const heroImg = '/assets/terracegarden.jpg';
+const galleryImg1 = '/assets/images/hydro.jpeg';
+const galleryImg2 = '/assets/images/hydro.jpeg';
+const galleryImg3 = '/assets/images/hydro.jpeg';
+const galleryImg4 = '/assets/images/hydro.jpeg';
+const galleryImg5 = '/assets/images/hydro.jpeg';
+const galleryImg6 = '/assets/images/hydro.jpeg';
 import QuoteModal from '../../components/QuoteModal';
 
 interface SmartHomeFarmPageProps {
@@ -60,20 +60,20 @@ const SmartHomeFarmPage: React.FC<SmartHomeFarmPageProps> = ({ setCurrentPage })
             <div className="inline-block bg-gradient-to-r from-green-100 to-orange-100 text-green-600 px-8 py-3 rounded-full font-bold mb-8 text-lg">
               Smart Home Farm
             </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
+            <h1 className="text-2xl md:text-5xl lg:text-7xl font-semibold mb-4 md:mb-8">
               <span className="text-orange-500">SMART</span> <span className="text-green-800">HOME FARM</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
+            <p className="text-base md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-4 md:mb-8">
               Ever wished you could just step outside and pick your own fresh veggies and herbs? With our Smart Home Farm, you can! We’ve made it super easy for families to grow their own food right on the terrace—no green thumb required. Everything’s set up for you, and our tech keeps things running smoothly, so you can enjoy real, homegrown goodness every day.
             </p>
-            <div className="bg-gradient-to-r from-green-600 to-orange-600 text-white px-8 py-4 rounded-2xl inline-block font-bold text-xl shadow-xl">
+            <div className="bg-gradient-to-r from-green-600 to-orange-600 text-white px-4 md:px-8 py-2 md:py-4 rounded-2xl inline-block font-semibold md:font-bold text-base md:text-xl shadow-xl">
               Turn your terrace into a mini farm and enjoy the taste of truly fresh food at home!
             </div>
           </div>
 
           {/* Hero Image Placeholder */}
           <div className="max-w-6xl mx-auto">
-            <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl h-96 md:h-[500px] flex items-center justify-center shadow-2xl border border-gray-200">
+            <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl h-48 md:h-96 flex items-center justify-center shadow-2xl border border-gray-200">
               <img
                 src={heroImg}
                 alt="Smart Home Farm Setup"
