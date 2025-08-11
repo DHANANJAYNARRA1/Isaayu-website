@@ -93,21 +93,20 @@ const AppDownload: React.FC<AppDownloadProps> = ({
       <div className="flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex flex-col md:flex-row items-center gap-6">
           {/* Mobile Phone Mockup */}
-          <div className="relative w-24 h-48 bg-black rounded-2xl p-1 border-4 border-gray-800 shadow-xl mb-4 md:mb-0">
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-12 h-3 bg-black rounded-b-xl z-10"></div>
-            <div className="w-full h-full bg-white rounded-xl overflow-hidden flex flex-col items-center justify-center p-2">
+          <div className="relative w-20 h-36 bg-black rounded-xl p-1 border-2 border-gray-800 shadow-lg mb-4 md:mb-0">
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-8 h-2 bg-black rounded-b-lg z-10"></div>
+            <div className="w-full h-full bg-white rounded-lg overflow-hidden flex flex-col items-center justify-center p-2">
               {/* ISAAYU Logo */}
               <img 
                 src="/assets/IsaayuLogo_HD.png" 
                 alt="ISAAYU App" 
-                className="w-12 h-12 object-contain mb-2" 
+                className="w-10 h-10 object-contain mb-1" 
               />
-              <div className="text-green-700 text-center">
-                <div className="text-xs font-bold mb-1">ISAAYU</div>
-                <div className="text-[9px]">Smart Agriculture</div>
+              <div className="text-green-600 text-center">
+                <div className="text-[10px] font-medium">Download</div>
               </div>
-              <div className="mt-2 animate-pulse">
-                <ChevronRight size={14} className="text-green-600" />
+              <div className="mt-1 animate-pulse">
+                <ChevronRight size={12} className="text-green-600" />
               </div>
             </div>
           </div>
