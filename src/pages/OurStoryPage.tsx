@@ -13,146 +13,70 @@ const journey = [
 
 const OurStoryPage = () => {
   return (
-    <div className="pt-20 bg-gradient-to-br from-green-50 via-orange-50 to-green-100 min-h-screen">
-      {/* Hero Section with Enhanced Card */}
-      <section className="py-20 bg-gradient-to-br from-green-50 via-orange-50 to-green-100 relative overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-32 h-32 bg-green-400 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 right-10 w-40 h-40 bg-orange-400 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-green-300 rounded-full blur-2xl"></div>
-        </div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="bg-white/80 backdrop-blur-sm border-2 border-green-200 border-t-orange-400 border-t-8 rounded-3xl p-8 md:p-12 max-w-6xl mx-auto shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
-            {/* Decorative Corner Elements */}
-           
-            <div className="text-center mb-8">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-600 via-orange-500 to-green-600">
-                  Our Sacred Story
-                </span>
-              </h1>
-              <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-orange-400 mx-auto rounded-full"></div>
-            </div>
-
-            <div className="prose prose-lg md:prose-xl max-w-none text-center">
-              <p className="text-gray-800 text-lg md:text-xl font-medium mb-6 leading-relaxed">
-                <span className="inline-block px-3 py-1 bg-orange-100 text-orange-600 rounded-full font-bold text-xl mb-2">Ancient India</span> 
-                <br />considered <span className="inline-block px-3 py-1 bg-green-100 text-green-600 rounded-full font-bold">'Food'</span> to be a form of the 
-                <span className="inline-block px-4 py-1 bg-gradient-to-r from-orange-100 to-green-100 text-orange-600 rounded-full font-bold mx-2">"Divine-Annam Parabrahma Swaroopam"</span>, 
-                which means Supreme Power
-              </p>
-              
-              <p className="text-gray-800 text-lg md:text-xl font-medium mb-6 leading-relaxed">
-                and <span className="inline-block px-3 py-1 bg-green-100 text-green-600 rounded-full font-bold">'Culinary'</span> to be one of the finest arts that was even practiced by the Kings like Nala and Bhima.
-              </p>
-              
-              <div className="bg-gradient-to-r from-green-50 to-orange-50 p-6 rounded-2xl border border-green-200 mb-6">
-                <p className="text-gray-800 text-lg md:text-xl font-medium leading-relaxed">
-                  Our ancestors consumed fresh greens, vegetables, fruits and other food items and lived with the fullest health.<br />
-                  They followed the saying, <span className="inline-block px-4 py-2 bg-orange-200 text-orange-700 rounded-full font-bold text-xl">"We are what we eat".</span>
-                </p>
-              </div>
-              
-              <p className="text-gray-800 text-lg md:text-xl font-medium mb-6 leading-relaxed">
-                As centuries passed by, people started buying food which was sold to them.<br />
-                Food that predominantly contains pesticides used during farming, having an adverse effect to their health.<br />
-                Thus, arose the need for adapting to our ancestral ways of eating fresh.
-              </p>
-              
-              <div className="bg-gradient-to-br from-green-100 to-orange-100 p-8 rounded-3xl border-2 border-green-300 mt-8">
-                <p className="text-gray-800 text-xl md:text-2xl font-bold leading-relaxed">
-                  The idea of providing access to <span className="text-green-600 bg-white px-4 py-2 rounded-full shadow-lg">freshly grown food at home</span> is revolutionary in itself.
-                </p>
-              </div>
-            </div>
+    <div className="pt-20 bg-gradient-to-b from-green-50 to-orange-50">
+      {/* Our Story Section */}
+      <section className="py-16 bg-gradient-to-b from-green-50 to-orange-50">
+        <div className="container mx-auto px-4">
+          <div className="bg-white border border-green-200 border-t-orange-400 border-t-4 rounded-2xl p-8 max-w-5xl mx-auto shadow-lg">
+            <p className="text-gray-800 text-lg md:text-xl text-center font-medium mb-4 leading-relaxed">
+              <span className="font-bold text-orange-500">Ancient India</span> considered <span className="font-bold text-green-600">'Food'</span> to be a form of the <span className="font-bold text-orange-500">"Divine-Annam Parabrahma Swaroopam"</span>, which means Supreme Power<br/>
+              and <span className="font-bold text-green-600">'Culinary'</span> to be one of the finest arts that was even practiced by the Kings like Nala and Bhima.<br/>
+              Our ancestors consumed fresh greens, vegetables, fruits and other food items and lived with the fullest health.<br/>
+              They followed the saying, <span className="font-bold text-orange-500">"We are what we eat".</span><br/>
+              As centuries passed by, people started buying food which was sold to them.<br/>
+              Food that predominantly contains pesticides used during farming, having an adverse effect to their health.<br/>
+              Thus, arose the need for adapting to our ancestral ways of eating fresh.<br/>
+              The idea of providing access to <span className="font-bold text-green-600">freshly grown food at home</span> is revolutionary in itself.
+            </p>
           </div>
         </div>
       </section>
       
-      {/* Fresh Philosophy Section with Video Support */}
-      <section className="py-20 bg-gradient-to-br from-white via-green-50 to-orange-50 relative overflow-hidden">
-        {/* Background Decoration */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 right-20 w-64 h-64 bg-green-400 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 left-20 w-48 h-48 bg-orange-400 rounded-full blur-3xl"></div>
-        </div>
+      {/* Fresh Philosophy Section with Image Beside Heading */}
+<section className="py-16 bg-white">
+  <div className="container mx-auto px-4">
+    <div className="flex flex-col md:flex-row items-center md:items-start md:justify-center gap-10">
+      
+      {/* Left Side - Text Section */}
+      <div className="flex-1">
+        <h3 className="text-3xl md:text-4xl font-bold mb-4 text-green-700 text-center md:text-left">
+          Isaayu in Sanskrit means 'Fresh'
+        </h3>
+        <p className="text-center md:text-left text-2xl md:text-3xl text-orange-500 font-bold mb-10">
+          We believe –
+        </p>
 
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16 max-w-7xl mx-auto">
-            
-            {/* Left side - Enhanced Text content */}
-            <div className="flex-1 text-center lg:text-left">
-              <div className="mb-8">
-                <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-800 mb-4">
-                  Isaayu in Sanskrit means 
-                  <span className="block text-orange-500 mt-2">'Fresh'</span>
-                </h3>
-                <div className="w-32 h-1 bg-gradient-to-r from-green-400 to-orange-400 rounded-full mx-auto lg:mx-0"></div>
-              </div>
-              
-              <p className="text-3xl md:text-4xl text-orange-500 font-bold mb-12 relative">
-                We believe –
-                <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-transparent rounded-full"></div>
-              </p>
-              
-              {/* Enhanced Philosophy Cards */}
-              <div className="space-y-6">
-                {[
-                  "The closer your farm – the fresher the produce;",
-                  "The fresher the produce – The fresher you eat;",
-                  "The fresher you eat – the healthier your diet;",
-                  "The healthier your diet – the sooner you attain \"The Green Health\"."
-                ].map((text, index) => (
-                  <div key={index} className="group">
-                    <div className="bg-gradient-to-br from-white via-green-50 to-orange-50 p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl border-2 border-transparent hover:border-green-300 transition-all duration-500 transform hover:-translate-y-1">
-                      <div className="flex items-center space-x-4">
-                        <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-orange-400 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                          {index + 1}
-                        </div>
-                        <p className="text-xl md:text-2xl text-gray-800 font-semibold leading-relaxed flex-1">
-                          {text}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            
-          {/* Right side - Enhanced Image Section */}
-          <div className="flex-shrink-0 relative">
-              <div className="relative group">
-                
-                {/* Main Image Container */}
-                <div className="relative bg-white p-4 rounded-3xl shadow-2xl border-4 border-green-200 hover:border-orange-300 transition-all duration-500 transform group-hover:scale-105">
-                  
-                  {/* Enhanced Image with loading states */}
-                  <img
-                    src="/assets/i1.webp"
-                    alt="Sanskrit Fresh Theme - Isaayu Philosophy"
-                    className="w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] object-cover rounded-2xl shadow-lg"
-                  />
-                  
-                  {/* Image Overlay Effect on Hover */}
-                  <div className="absolute inset-4 rounded-2xl bg-gradient-to-br from-green-500/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
-                   
-                  </div>
-                  
-                  {/* Corner Decorations */}
-                 
-                </div>
-                
-                {/* Floating Elements */}
-                
-              </div>
-            </div>
+        <div className="max-w-3xl mx-auto md:mx-0 bg-gradient-to-br from-green-50 to-orange-50 p-8 rounded-2xl shadow-lg">
+          <div className="space-y-6 text-center md:text-left">
+            <p className="text-xl md:text-2xl text-gray-800 font-medium">The closer your farm – the fresher the produce;</p>
+            <p className="text-xl md:text-2xl text-gray-800 font-medium">The fresher the produce – The fresher you eat;</p>
+            <p className="text-xl md:text-2xl text-gray-800 font-medium">The fresher you eat – the healthier your diet;</p>
+            <p className="text-xl md:text-2xl text-gray-800 font-medium">The healthier your diet – the sooner you attain "The Green Health".</p>
           </div>
         </div>
-      </section>
-              
-              
+      </div>
+
+      {/* Right Side - Enhanced Image Section */}
+      <div className="flex-shrink-0 relative">
+        <div className="relative group">
+          <div className="relative bg-white p-4 rounded-3xl shadow-2xl border-4 border-green-200 hover:border-orange-300 transition-all duration-500 transform group-hover:scale-105">
+            <img
+              src="/assets/5912.jpg"
+              alt="Sanskrit Fresh Theme - Isaayu Philosophy"
+              className="w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] object-cover rounded-2xl shadow-lg"
+            />
+            {/* Overlay on Hover */}
+            <div className="absolute inset-4 rounded-2xl bg-gradient-to-br from-green-500/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
 
       {/* Enhanced Mission Section */}
       <section className="py-20 bg-gradient-to-br from-orange-50 via-green-50 to-orange-100 relative overflow-hidden">
