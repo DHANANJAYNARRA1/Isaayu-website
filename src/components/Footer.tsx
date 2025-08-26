@@ -48,15 +48,25 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="bg-gradient-to-br from-orange-500 to-orange-600 p-3 rounded-xl shadow-lg">
-                <Leaf className="h-8 w-8 text-white" />
-              </div>
-              <div>
-                <span className="text-2xl font-bold text-orange-500">ISAAYU</span>
-                <p className="text-sm text-green-400 font-medium">The Green Health</p>
-              </div>
-            </div>
+          <div className="flex items-center space-x-4 mb-6">
+  {/* Logo Container */}
+  <div className="bg-white p-3 rounded-2xl shadow-md border border-gray-100">
+    <img
+      src="/assets/IsaayuLogo_HD.png"
+      alt="Logo"
+      className="h-16 md:h-20 w-auto object-contain"
+    />
+  </div>
+
+  {/* Text Branding */}
+  <div>
+    <span className="text-2xl font-bold text-orange-500 tracking-wide">
+      ISAAYU
+    </span>
+    <p className="text-sm text-green-500 font-medium">The Green Health</p>
+  </div>
+</div>
+
             <p className="text-slate-300 mb-6 leading-relaxed">
               Empowering urban agriculture with smart IoT solutions. 
               Transform your space into a thriving, automated garden.

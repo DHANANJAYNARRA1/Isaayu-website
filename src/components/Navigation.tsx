@@ -95,11 +95,11 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, setCurrentPage }) 
             onClick={() => handlePageChange('home')}
             className="flex items-center"
           >
-            <img 
-              src="/assets/IsaayuLogo_HD.png" 
-              alt="Logo"
-              className="h-16 md:h-20 w-auto object-contain" 
-            />
+            <img
+                src="/assets/IsaayuLogo_HD.png"
+                alt="Logo"
+                className="h-20 md:h-20 w-auto object-contain" // medium size logo
+              />
           </button>
           
           {/* Desktop Menu */}
