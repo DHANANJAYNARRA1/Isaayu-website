@@ -5,6 +5,7 @@ const aIdeaLogo = '/assets/a-idea.png';
 const naarmLogo = '/assets/naarmlogo.png';
 const icarLogo = '/assets/icarlogo.png';
 const startuoinidaLogo = '/assets/startupindialogo.png';
+
 interface FooterProps {
   setCurrentPage: (page: string) => void;
 }
@@ -36,41 +37,61 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
       {/* Incubators Row above the main footer grid */}
       <div className="w-full flex flex-col items-center mb-4">
         <span className="text-xl font-bold mb-6 text-orange-400">Our Incubators at</span>
-        <div className="flex gap-8 items-center">
-        <img src={startuoinidaLogo} alt="A-IDEA" className="h-12 md:h-20 w-20 md:w-32 object-contain rounded bg-white p-1 md:p-2 shadow" />
-          <img src={aIdeaLogo} alt="A-IDEA" className="h-12 md:h-20 w-20 md:w-32 object-contain rounded bg-white p-1 md:p-2 shadow" />
-          <img src={naarmLogo} alt="NAARM" className="h-12 md:h-20 w-20 md:w-32 object-contain rounded bg-white p-1 md:p-2 shadow" />
-          <img src={icarLogo} alt="ICAR" className="h-12 md:h-20 w-20 md:w-32 object-contain rounded bg-white p-1 md:p-2 shadow" />
+        <div className="flex items-center">
+          {/* First logo with right margin for spacing */}
+          <img
+            src={startuoinidaLogo}
+            alt="Startup India"
+            className="h-12 md:h-20 w-20 md:w-32 object-contain rounded bg-white p-1 md:p-2 shadow mr-8"
+          />
+
+          {/* Last three logos connected as one continuous card */}
+          <div className="flex bg-white shadow rounded overflow-hidden">
+            <img
+              src={aIdeaLogo}
+              alt="A-IDEA"
+              className="h-12 md:h-20 w-20 md:w-32 object-contain p-1 md:p-2 border-r border-gray-200"
+            />
+            <img
+              src={naarmLogo}
+              alt="NAARM"
+              className="h-12 md:h-20 w-20 md:w-32 object-contain p-1 md:p-2 border-r border-gray-200"
+            />
+            <img
+              src={icarLogo}
+              alt="ICAR"
+              className="h-12 md:h-20 w-20 md:w-32 object-contain p-1 md:p-2"
+            />
+          </div>
         </div>
       </div>
+
       {/* Main Footer */}
       <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-          <div className="flex items-center space-x-4 mb-6">
-  {/* Logo Container */}
-  <div className="bg-white p-3 rounded-2xl shadow-md border border-gray-100">
-    <img
-      src="/assets/IsaayuLogo_HD.png"
-      alt="Logo"
-      className="h-16 md:h-20 w-auto object-contain"
-    />
-  </div>
-
-  {/* Text Branding */}
-  <div>
-    <span className="text-2xl font-bold text-orange-500 tracking-wide">
-      ISAAYU
-    </span>
-    <p className="text-sm text-green-500 font-medium">The Green Health</p>
-  </div>
-</div>
-
-            <p className="text-slate-300 mb-6 leading-relaxed">
-              Empowering urban agriculture with smart IoT solutions. 
-              Transform your space into a thriving, automated garden.
-            </p>
+            <div className="flex items-center gap-4 mb-6">
+              {/* Text Branding - Flexible */}
+             
+              
+              {/* Logo Container - Fixed size */}
+              <div className="flex-shrink-0">
+                <div className="rounded-2xl shadow-md">
+                  <img
+                    src="/assets/IsaayuLogo_HD.png"
+                    alt="Logo"
+                    className="h-24 md:h-32 w-auto object-contain rounded-2xl"
+                  />
+                </div>
+              </div>
+              <div className="flex-1">
+                <p className="text-slate-300 leading-relaxed text-sm md:text-base">
+                  Empowering urban agriculture with smart IoT solutions. 
+                  Transform your space into a thriving, automated garden.
+                </p>
+              </div>
+            </div>
             
             {/* Contact Information */}
             <div className="space-y-3 mb-6">
@@ -82,14 +103,7 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
                 <span>+91 7527866666</span>
               </a>
               
-              <a 
-                href="mailto:isaayufarms@gmail.com" 
-                className="flex items-center gap-3 text-slate-300 hover:text-orange-400 transition-colors"
-              >
-                <Mail size={18} className="text-orange-400" />
-                <span>isaayufarms@gmail.com</span>
-              </a>
-              
+             
               <a 
                 href="mailto:customercare@isaayu.com" 
                 className="flex items-center gap-3 text-slate-300 hover:text-orange-400 transition-colors"
@@ -98,13 +112,7 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
                 <span>customercare@isaayu.com</span>
               </a>
               
-              <a 
-                href="mailto:customer@gmail.com" 
-                className="flex items-center gap-3 text-slate-300 hover:text-orange-400 transition-colors"
-              >
-                <Mail size={18} className="text-orange-400" />
-                <span>customer@gmail.com</span>
-              </a>
+             
               
               <a 
                 href="https://www.isaayu.com" 

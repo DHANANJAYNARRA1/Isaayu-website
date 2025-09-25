@@ -1,8 +1,15 @@
-const heroImg = '/assets/images/hydro.jpeg';
-const gallery1 = '/assets/images/hydro.jpeg';
-const gallery2 = '/assets/images/hydro.jpeg';
-const gallery3 = '/assets/images/hydro.jpeg';
 import AppDownload from '../../components/AppDownload';
+
+const supportFeatures = [
+  '24/7 Technical Support',
+  'Remote Diagnostics',
+  'Regular Maintenance',
+  'Warranty Coverage',
+  'Agronomist Support',
+  'On-call Assistance',
+  'System Health Monitoring',
+  'Personalized Guidance'
+];
 
 const MaintenanceSupportPage = () => (
   <div className="pt-20">
@@ -16,15 +23,19 @@ const MaintenanceSupportPage = () => (
             <span className="text-orange-500">MAINTENANCE</span> <span className="text-green-800">& SUPPORT</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
-            24/7 technical support and regular maintenance to keep your smart garden running perfectly.
+            24/7 technical and agronomist support to keep your smart garden running perfectly.
           </p>
           <div className="bg-gradient-to-r from-green-600 to-orange-600 text-white px-8 py-4 rounded-2xl inline-block font-bold text-xl shadow-xl">
             We're Here for You, Always!
           </div>
         </div>
-        <div className="max-w-6xl mx-auto">
-          <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl h-96 md:h-[500px] flex items-center justify-center shadow-2xl border border-gray-200">
-            <img src={heroImg} alt="Maintenance & Support" className="object-cover w-full h-full rounded-3xl" />
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl aspect-[4/3] flex items-center justify-center shadow-2xl border border-gray-200 overflow-hidden">
+            <img
+              src="/assets/images/20250305_160856.jpg"
+              alt="Maintenance & Support"
+              className="object-cover object-center w-full h-full"
+            />
           </div>
         </div>
       </div>
@@ -33,29 +44,14 @@ const MaintenanceSupportPage = () => (
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-green-800 mb-8 text-center">Service Features</h2>
         <ul className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
-          <li className="bg-green-50 rounded-2xl p-6 shadow-lg text-lg text-gray-700 font-medium">24/7 technical support</li>
-          <li className="bg-green-50 rounded-2xl p-6 shadow-lg text-lg text-gray-700 font-medium">Regular maintenance plans</li>
-          <li className="bg-green-50 rounded-2xl p-6 shadow-lg text-lg text-gray-700 font-medium">Remote diagnostics and troubleshooting</li>
-          <li className="bg-green-50 rounded-2xl p-6 shadow-lg text-lg text-gray-700 font-medium">Warranty coverage and repairs</li>
+          {supportFeatures.map((feature, idx) => (
+            <li key={idx} className="bg-green-50 rounded-2xl p-6 shadow-lg text-lg text-gray-700 font-medium">
+              {feature}
+            </li>
+          ))}
         </ul>
       </div>
     </section>
-    <section className="py-24 bg-gradient-to-b from-green-50 to-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-green-800 mb-6">Gallery</h2>
-          <p className="text-xl md:text-2xl text-gray-600">See our support in action</p>
-        </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[gallery1, gallery2, gallery3].map((imgSrc, idx) => (
-            <div key={idx} className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl h-64 flex items-center justify-center hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2">
-              <img src={imgSrc} alt={`Gallery ${idx + 1}`} className="object-cover w-full h-full rounded-2xl" />
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-    
     {/* CTA Section with App Download */}
     <section className="py-16 bg-white border-t border-gray-100">
       <div className="container mx-auto px-4 text-center">

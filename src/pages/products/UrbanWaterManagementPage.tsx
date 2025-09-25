@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { ArrowLeft, Droplets, Wifi, Gauge, Smartphone, CheckCircle, Star, BarChart3 } from 'lucide-react';
 
 const heroImg = '/assets/urbanwatermanagement.jpg';
-const galleryImg1 = '/assets/images/urban1.jpg';
-const galleryImg2 = '/assets/images/urban2.jpg';
-const galleryImg3 = '/assets/images/urban3.jpg';
-const galleryImg4 = '/assets/images/urban4.jpg';
-const galleryImg5 = '/assets/images/urban5.jpg';
-const galleryImg6 = '/assets/images/urban6.jpg';
+const galleryImg1 = '/assets/';
+const galleryImg2 = '/assets/';
+const galleryImg3 = '/assets/';
+const galleryImg4 = '/assets/';
+const galleryImg5 = '/assets/';
+const galleryImg6 = '/assets/';
 import QuoteModal from '../../components/QuoteModal';
 import AppDownload from '../../components/AppDownload';
 

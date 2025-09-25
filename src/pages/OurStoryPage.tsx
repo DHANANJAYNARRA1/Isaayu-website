@@ -16,278 +16,228 @@ const OurStoryPage = () => {
     <div className="pt-20 bg-gradient-to-b from-green-50 to-orange-50">
       {/* Our Story Section */}
       <section className="py-16 bg-gradient-to-b from-green-50 to-orange-50">
-        <div className="container mx-auto px-4">
-          <div className="bg-white border border-green-200 border-t-orange-400 border-t-4 rounded-2xl p-8 max-w-5xl mx-auto shadow-lg">
-            <p className="text-gray-800 text-lg md:text-xl text-center font-medium mb-4 leading-relaxed">
-              <span className="font-bold text-orange-500">Ancient India</span> considered <span className="font-bold text-green-600">'Food'</span> to be a form of the <span className="font-bold text-orange-500">"Divine-Annam Parabrahma Swaroopam"</span>, which means Supreme Power<br/>
-              and <span className="font-bold text-green-600">'Culinary'</span> to be one of the finest arts that was even practiced by the Kings like Nala and Bhima.<br/>
-              Our ancestors consumed fresh greens, vegetables, fruits and other food items and lived with the fullest health.<br/>
-              They followed the saying, <span className="font-bold text-orange-500">"We are what we eat".</span><br/>
-              As centuries passed by, people started buying food which was sold to them.<br/>
-              Food that predominantly contains pesticides used during farming, having an adverse effect to their health.<br/>
-              Thus, arose the need for adapting to our ancestral ways of eating fresh.<br/>
-              The idea of providing access to <span className="font-bold text-green-600">freshly grown food at home</span> is revolutionary in itself.
+  <div className="container mx-auto px-4">
+    <div className="bg-white border border-green-200 border-t-orange-400 border-t-4 rounded-2xl p-8 max-w-7xl mx-auto shadow-lg">
+      <div className="text-gray-800 text-lg md:text-xl text-center font-medium space-y-8">
+        
+        <p className="whitespace-nowrap overflow-hidden">
+          <span className="font-bold text-orange-500">Ancient India</span> considered{' '}
+          <span className="font-bold text-green-600">'Food'</span> to be a form of the{' '}
+          <span className="font-bold text-orange-500">"Divine-Annam Parabrahma Swaroopam"</span>, which means Supreme Power.
+        </p>
+        
+        <p className="whitespace-nowrap overflow-hidden">
+          And <span className="font-bold text-green-600">'Culinary'</span> to be one of the finest arts that was even practiced by the Kings like Nala and Bhima.
+        </p>
+        
+        <p className="whitespace-nowrap overflow-hidden">
+          Our ancestors consumed fresh greens, vegetables, fruits and other food items and lived with the fullest health.
+        </p>
+        
+        <p className="whitespace-nowrap overflow-hidden">
+          They followed the saying, <span className="font-bold text-orange-500">"We are what we eat".</span>
+        </p>
+        
+        <p className="whitespace-nowrap overflow-hidden">
+          As centuries passed by, people started buying food which was sold to them. Food that predominantly contains pesticides used during farming, having an adverse effect to their health.
+        </p>
+        
+        <p className="whitespace-nowrap overflow-hidden">
+          Thus, arose the need for adapting to our ancestral ways of eating fresh.
+        </p>
+        
+        <p className="whitespace-nowrap overflow-hidden">
+          The idea of providing access to <span className="font-bold text-green-600">freshly grown food at home</span> is revolutionary in itself.
+        </p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+      {/* Fresh Philosophy Section with Image Beside Heading */}
+      <section className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 max-w-7xl mx-auto">
+          
+          {/* Left Side - Text Section */}
+          <div className="flex-1 text-center">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4 text-green-700">
+              Isaayu in Sanskrit means 'Fresh'
+            </h3>
+            <p className="text-2xl md:text-3xl text-orange-500 font-bold mb-10">
+              We believe –
+            </p>
+            <div className="max-w-3xl mx-auto bg-gradient-to-br from-green-50 to-orange-50 p-8 rounded-2xl shadow-lg">
+  <div className="space-y-6 text-center">
+    <p className="text-xl md:text-2xl text-gray-800 font-medium">
+      The closer your farm – the fresher the produce;
+    </p>
+    <p className="text-xl md:text-2xl text-gray-800 font-medium">
+      The fresher the produce – The fresher you eat;
+    </p>
+    <p className="text-xl md:text-2xl text-gray-800 font-medium">
+      The fresher you eat – the healthier your diet;
+    </p>
+    <p className="text-xl md:text-2xl text-gray-800 font-medium whitespace-nowrap">
+      The healthier your diet – the sooner you attain "The Green Health".
+    </p>
+  </div>
+</div>
+
+
+          </div>
+
+          {/* Right Side - Enhanced Image Section */}
+          <div className="flex-shrink-0 relative">
+            <div className="relative group">
+              <div className="relative bg-white p-4 rounded-3xl shadow-2xl border-4 border-green-200 hover:border-orange-300 transition-all duration-500 transform group-hover:scale-105">
+                <img
+                  src="/assets/5912.jpg"
+                  alt="Sanskrit Fresh Theme - Isaayu Philosophy"
+                  className="w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] object-cover rounded-2xl shadow-lg"
+                />
+                {/* Overlay on Hover */}
+                <div className="absolute inset-4 rounded-2xl bg-gradient-to-br from-green-500/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+      {/* Enhanced Mission Section */}
+    {/* Mission Section */}
+<section className="py-20 bg-gradient-to-br from-orange-50 via-green-50 to-orange-100 relative overflow-hidden">
+  {/* Background Decoration */}
+  <div className="absolute inset-0 opacity-10">
+    <div className="absolute top-10 left-1/4 w-40 h-40 bg-orange-400 rounded-full blur-3xl"></div>
+    <div className="absolute bottom-10 right-1/4 w-32 h-32 bg-green-400 rounded-full blur-3xl"></div>
+  </div>
+
+  <div className="container mx-auto px-4 relative z-10">
+    <div className="text-center mb-12">
+      <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+        <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 via-orange-500 to-green-500">
+          OUR MISSION
+        </span>
+      </h3>
+      <div className="w-32 h-2 bg-gradient-to-r from-green-400 to-orange-400 mx-auto rounded-full"></div>
+    </div>
+
+    <div className="max-w-6xl mx-auto">
+      <div className="bg-white/90 backdrop-blur-sm border-t-8 border-b-8 border-t-orange-400 border-b-green-400 rounded-3xl p-10 md:p-12 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 relative overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-green-100 to-orange-100"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10">
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-orange-100 to-green-100 px-8 py-4 rounded-full border-2 border-orange-300 shadow-lg">
+              <svg className="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L2 7v5c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+              </svg>
+              <span className="text-2xl font-bold text-orange-600">MOVEMENT</span>
+              <svg className="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.72c.48-.15 1.04-.25 1.34-.25 2.76 0 5-2.24 5-5 0-2.76-2.24-5-5-5-.26 0-.53.01-.78.05L7 7l10 1z"/>
+              </svg>
+            </div>
+          </div>
+
+          <p className="text-gray-800 text-xl md:text-2xl text-center font-semibold leading-relaxed">
+            Join <span className="font-bold text-orange-600">THE ISAAYU MOVEMENT</span> and attain <span className="font-bold text-green-600">"The Green Health"</span>
+          </p>
+
+          <div className="mt-8 p-6 bg-gradient-to-r from-green-50 to-orange-50 rounded-2xl border border-green-200">
+            <p className="text-gray-800 text-lg md:text-xl text-center font-medium leading-relaxed">
+              At Isaayu we are introducing the idea of growing your greens, herbs,
+              vegetables and fruits in your own space and eating the freshly harvested
+              produce. As the saying goes,{" "}
+              <span className="font-bold text-orange-600 text-xl">
+                "Food is a medicine by itself"
+              </span>.
             </p>
           </div>
         </div>
-      </section>
-      
-      {/* Fresh Philosophy Section with Image Beside Heading */}
-<section className="py-16 bg-white">
-  <div className="container mx-auto px-4">
-    <div className="flex flex-col md:flex-row items-center md:items-start md:justify-center gap-10">
-      
-      {/* Left Side - Text Section */}
-      <div className="flex-1">
-        <h3 className="text-3xl md:text-4xl font-bold mb-4 text-green-700 text-center md:text-left">
-          Isaayu in Sanskrit means 'Fresh'
-        </h3>
-        <p className="text-center md:text-left text-2xl md:text-3xl text-orange-500 font-bold mb-10">
-          We believe –
-        </p>
-
-        <div className="max-w-3xl mx-auto md:mx-0 bg-gradient-to-br from-green-50 to-orange-50 p-8 rounded-2xl shadow-lg">
-          <div className="space-y-6 text-center md:text-left">
-            <p className="text-xl md:text-2xl text-gray-800 font-medium">The closer your farm – the fresher the produce;</p>
-            <p className="text-xl md:text-2xl text-gray-800 font-medium">The fresher the produce – The fresher you eat;</p>
-            <p className="text-xl md:text-2xl text-gray-800 font-medium">The fresher you eat – the healthier your diet;</p>
-            <p className="text-xl md:text-2xl text-gray-800 font-medium">The healthier your diet – the sooner you attain "The Green Health".</p>
-          </div>
-        </div>
       </div>
-
-      {/* Right Side - Enhanced Image Section */}
-      <div className="flex-shrink-0 relative">
-        <div className="relative group">
-          <div className="relative bg-white p-4 rounded-3xl shadow-2xl border-4 border-green-200 hover:border-orange-300 transition-all duration-500 transform group-hover:scale-105">
-            <img
-              src="/assets/5912.jpg"
-              alt="Sanskrit Fresh Theme - Isaayu Philosophy"
-              className="w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] object-cover rounded-2xl shadow-lg"
-            />
-            {/* Overlay on Hover */}
-            <div className="absolute inset-4 rounded-2xl bg-gradient-to-br from-green-500/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center"></div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
 
+{/* Vision Section */}
+<section className="py-20 bg-gradient-to-br from-green-50 via-orange-50 to-green-100 relative overflow-hidden">
+  {/* Background Decoration */}
+  <div className="absolute inset-0 opacity-10">
+    <div className="absolute top-16 right-16 w-48 h-48 bg-green-400 rounded-full blur-3xl"></div>
+    <div className="absolute bottom-16 left-16 w-36 h-36 bg-orange-400 rounded-full blur-3xl"></div>
+  </div>
 
+  <div className="container mx-auto px-4 relative z-10">
+    <div className="text-center mb-12">
+      <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+        <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-green-600 to-orange-500">
+          OUR VISION
+        </span>
+      </h3>
+      <div className="w-32 h-2 bg-gradient-to-r from-orange-400 to-green-400 mx-auto rounded-full"></div>
+    </div>
 
-
-      {/* Enhanced Mission Section */}
-      <section className="py-20 bg-gradient-to-br from-orange-50 via-green-50 to-orange-100 relative overflow-hidden">
-        {/* Background Decoration */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-1/4 w-40 h-40 bg-orange-400 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 right-1/4 w-32 h-32 bg-green-400 rounded-full blur-3xl"></div>
+    <div className="max-w-6xl mx-auto">
+      <div className="bg-white/90 backdrop-blur-sm border-l-8 border-r-8 border-l-green-400 border-r-orange-400 rounded-3xl p-10 md:p-12 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 relative overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-orange-100 to-green-100"></div>
         </div>
 
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-12">
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 via-orange-500 to-green-500">
-                OUR MISSION
-              </span>
-            </h2>
-            <div className="w-32 h-2 bg-gradient-to-r from-green-400 to-orange-400 mx-auto rounded-full"></div>
-          </div>
-
-          <div className="max-w-5xl mx-auto">
-            <div className="bg-white/90 backdrop-blur-sm border-t-8 border-b-8 border-t-orange-400 border-b-green-400 rounded-3xl p-10 md:p-12 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 relative overflow-hidden">
-              {/* Background Pattern */}
-              <div className="absolute inset-0 opacity-5">
-                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-green-100 to-orange-100"></div>
-              </div>
-
-              {/* Content */}
-              <div className="relative z-10">
-                <div className="text-center mb-8">
-                  <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-orange-100 to-green-100 px-8 py-4 rounded-full border-2 border-orange-300 shadow-lg">
-                    <svg className="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2L2 7i10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
-                    </svg>
-                    <span className="text-2xl font-bold text-orange-600">MOVEMENT</span>
-                    <svg className="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.72c.48-.15 1.04-.25 1.34-.25 2.76 0 5-2.24 5-5 0-2.76-2.24-5-5-5-.26 0-.53.01-.78.05L7 7l10 1z"/>
-                    </svg>
-                  </div>
-                </div>
-
-                <p className="text-gray-800 text-xl md:text-2xl text-center font-semibold leading-relaxed">
-                  Join{' '}
-                  <span className="inline-block px-4 py-2 bg-orange-200 text-orange-600 rounded-full font-bold text-2xl shadow-lg transform hover:scale-110 transition-transform duration-300">
-                    THE ISAAYU MOVEMENT
-                  </span>{' '}
-                  and attain{' '}
-                  <span className="inline-block px-4 py-2 bg-green-200 text-green-600 rounded-full font-bold text-2xl shadow-lg transform hover:scale-110 transition-transform duration-300">
-                    "The Green Health"
-                  </span>
-                </p>
-
-                <div className="mt-8 p-6 bg-gradient-to-r from-green-50 to-orange-50 rounded-2xl border border-green-200">
-                  <p className="text-gray-800 text-lg md:text-xl text-center font-medium leading-relaxed">
-                    At Isaayu we are introducing the idea of growing your greens, herbs, vegetables and fruits in your own space and eating the freshly harvested produce. As the saying goes,{' '}
-                    <span className="inline-block px-4 py-2 bg-orange-300 text-orange-700 rounded-full font-bold text-xl shadow-md">
-                      "Food is a medicine by itself"
-                    </span>.
-                  </p>
-                </div>
-              </div>
-
-              {/* Decorative Elements */}
-             
+        {/* Content */}
+        <div className="relative z-10">
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-green-100 to-orange-100 px-8 py-4 rounded-full border-2 border-green-300 shadow-lg">
+              <svg className="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+              <span className="text-2xl font-bold text-green-600">VISION</span>
+              <svg className="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
             </div>
           </div>
-        </div>
-      </section>
 
-                
+          <div className="space-y-6">
+            <p className="text-gray-800 text-xl md:text-2xl text-center font-semibold leading-relaxed">
+              With each passing day, people are becoming more conscious and aware of the benefits of a{" "}
+              <span className="font-bold text-green-600">
+                healthy and nutritious diet
+              </span>.
+            </p>
 
-      {/* Enhanced Mission Section */}
-      <section className="py-20 bg-gradient-to-br from-orange-50 via-green-50 to-orange-100 relative overflow-hidden">
-        {/* Background Decoration */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-1/4 w-40 h-40 bg-orange-400 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 right-1/4 w-32 h-32 bg-green-400 rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-12">
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 via-orange-500 to-green-500">
-                OUR MISSION
-              </span>
-            </h2>
-            <div className="w-32 h-2 bg-gradient-to-r from-green-400 to-orange-400 mx-auto rounded-full"></div>
-          </div>
-
-          <div className="max-w-5xl mx-auto">
-            <div className="bg-white/90 backdrop-blur-sm border-t-8 border-b-8 border-t-orange-400 border-b-green-400 rounded-3xl p-10 md:p-12 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 relative overflow-hidden">
-              {/* Background Pattern */}
-              <div className="absolute inset-0 opacity-5">
-                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-green-100 to-orange-100"></div>
-              </div>
-
-              {/* Content */}
-              <div className="relative z-10">
-                <div className="text-center mb-8">
-                  <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-orange-100 to-green-100 px-8 py-4 rounded-full border-2 border-orange-300 shadow-lg">
-                    <svg className="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2L2 7i10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
-                    </svg>
-                    <span className="text-2xl font-bold text-orange-600">MOVEMENT</span>
-                    <svg className="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.72c.48-.15 1.04-.25 1.34-.25 2.76 0 5-2.24 5-5 0-2.76-2.24-5-5-5-.26 0-.53.01-.78.05L7 7l10 1z"/>
-                    </svg>
-                  </div>
-                </div>
-
-                <p className="text-gray-800 text-xl md:text-2xl text-center font-semibold leading-relaxed">
-                  Join{' '}
-                  <span className="inline-block px-4 py-2 bg-orange-200 text-orange-600 rounded-full font-bold text-2xl shadow-lg transform hover:scale-110 transition-transform duration-300">
-                    THE ISAAYU MOVEMENT
-                  </span>{' '}
-                  and attain{' '}
-                  <span className="inline-block px-4 py-2 bg-green-200 text-green-600 rounded-full font-bold text-2xl shadow-lg transform hover:scale-110 transition-transform duration-300">
-                    "The Green Health"
-                  </span>
-                </p>
-
-                <div className="mt-8 p-6 bg-gradient-to-r from-green-50 to-orange-50 rounded-2xl border border-green-200">
-                  <p className="text-gray-800 text-lg md:text-xl text-center font-medium leading-relaxed">
-                    At Isaayu we are introducing the idea of growing your greens, herbs, vegetables and fruits in your own space and eating the freshly harvested produce. As the saying goes,{' '}
-                    <span className="inline-block px-4 py-2 bg-orange-300 text-orange-700 rounded-full font-bold text-xl shadow-md">
-                      "Food is a medicine by itself"
-                    </span>.
-                  </p>
-                </div>
-              </div>
-
-              {/* Decorative Elements */}
-              
+            <div className="bg-gradient-to-r from-orange-50 to-green-50 p-6 rounded-2xl border border-orange-200">
+              <p className="text-gray-800 text-xl md:text-2xl text-center font-semibold leading-relaxed">
+                Isaayu encourages everyone to be an{" "}
+                <span className="font-bold text-orange-600">
+                  urban cultivator
+                </span>{" "}
+                and adapt to the idea of{" "}
+                <span className="font-bold text-green-600">
+                  "The Green Health"
+                </span>
+              </p>
             </div>
+
+            <p className="text-gray-800 text-xl md:text-2xl text-center font-semibold leading-relaxed">
+              by bringing Mother Nature close to them and contributing towards a{" "}
+              <span className="font-bold text-orange-700">
+                sustainable and healthy lifestyle
+              </span>.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-      {/* Enhanced Vision Section */}
-      <section className="py-20 bg-gradient-to-br from-green-50 via-orange-50 to-green-100 relative overflow-hidden">
-        {/* Background Decoration */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-16 right-16 w-48 h-48 bg-green-400 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-16 left-16 w-36 h-36 bg-orange-400 rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-12">
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-green-600 to-orange-500">
-                OUR VISION
-              </span>
-            </h2>
-            <div className="w-32 h-2 bg-gradient-to-r from-orange-400 to-green-400 mx-auto rounded-full"></div>
-          </div>
-
-          <div className="max-w-5xl mx-auto">
-            <div className="bg-white/90 backdrop-blur-sm border-l-8 border-r-8 border-l-green-400 border-r-orange-400 rounded-3xl p-10 md:p-12 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 relative overflow-hidden">
-              {/* Background Pattern */}
-              <div className="absolute inset-0 opacity-5">
-                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-orange-100 to-green-100"></div>
-              </div>
-
-              {/* Content */}
-              <div className="relative z-10">
-                <div className="text-center mb-8">
-                  <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-green-100 to-orange-100 px-8 py-4 rounded-full border-2 border-green-300 shadow-lg">
-                    <svg className="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                    <span className="text-2xl font-bold text-green-600">VISION</span>
-                    <svg className="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                    </svg>
-                  </div>
-                </div>
-
-                <div className="space-y-6">
-                  <p className="text-gray-800 text-xl md:text-2xl text-center font-semibold leading-relaxed">
-                    With each passing day, people are becoming more conscious and aware of the benefits of a{' '}
-                    <span className="inline-block px-4 py-2 bg-green-200 text-green-600 rounded-full font-bold shadow-lg">
-                      healthy and nutritious diet
-                    </span>.
-                  </p>
-
-                  <div className="bg-gradient-to-r from-orange-50 to-green-50 p-6 rounded-2xl border border-orange-200">
-                    <p className="text-gray-800 text-xl md:text-2xl text-center font-semibold leading-relaxed">
-                      Isaayu encourages everyone to be an{' '}
-                      <span className="inline-block px-4 py-2 bg-orange-200 text-orange-600 rounded-full font-bold shadow-lg">
-                        urban cultivator
-                      </span>{' '}
-                      and adapt to the idea of{' '}
-                      <span className="inline-block px-4 py-2 bg-green-200 text-green-600 rounded-full font-bold shadow-lg">
-                        "The Green Health"
-                      </span>
-                    </p>
-                  </div>
-
-                  <p className="text-gray-800 text-xl md:text-2xl text-center font-semibold leading-relaxed">
-                    by bringing Mother Nature close to them and contributing towards a{' '}
-                    <span className="inline-block px-4 py-2 bg-gradient-to-r from-orange-200 to-green-200 text-gray-800 rounded-full font-bold shadow-lg">
-                      sustainable and healthy lifestyle
-                    </span>.
-                  </p>
-                </div>
-              </div>
-
-             
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Journey Timeline Section */}
       <section className="py-20 bg-gradient-to-br from-white via-green-50 to-orange-50">

@@ -1,7 +1,7 @@
-const heroImg = '/assets/images/hydro.jpeg';
-const gallery1 = '/assets/images/hydro.jpeg';
-const gallery2 = '/assets/images/hydro.jpeg';
-const gallery3 = '/assets/images/hydro.jpeg';
+const heroImg = '/assets/images/Customer Installation_2.jpeg';
+const gallery1 = '/assets/images/gallery1.jpeg';
+const gallery2 = '/assets/images/gallery2.jpg';
+const gallery3 = '/assets/images/gallery3.jpg';
 import AppDownload from '../../components/AppDownload';
 
 const InstallationSetupPage = () => (
@@ -22,9 +22,14 @@ const InstallationSetupPage = () => (
             Start Growing Instantly!
           </div>
         </div>
-        <div className="max-w-6xl mx-auto">
-          <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl h-96 md:h-[500px] flex items-center justify-center shadow-2xl border border-gray-200">
-            <img src={heroImg} alt="Installation & Setup" className="object-cover w-full h-full rounded-3xl" />
+        <div className="max-w-4xl mx-auto">
+          <div className="rounded-3xl shadow-2xl border border-gray-200 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center" style={{ aspectRatio: '4/3' }}>
+            <img
+              src={heroImg}
+              alt="Installation & Setup"
+              className="object-contain w-full h-full"
+              draggable={false}
+            />
           </div>
         </div>
       </div>

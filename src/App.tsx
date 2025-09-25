@@ -20,6 +20,7 @@ import Agri360Page from './pages/products/Agri360Page';
 import ExperientialFarmingProgramPage from './pages/products/ExperientialFarmingProgramPage';
 import InstallationSetupPage from './pages/products/InstallationSetupPage';
 import MaintenanceSupportPage from './pages/products/MaintenanceSupportPage';
+import Services from './components/Services.tsx';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
