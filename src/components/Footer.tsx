@@ -92,9 +92,9 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
               <div className="flex items-start gap-3 text-slate-300">
                 <MapPin size={18} className="text-orange-400 mt-1" />
                 <div className="text-sm">
-                  <div>Plot No 26, Amar Society,</div>
+                  <div>Amar Society, Plot No.26,</div>
                   <div>Kavuri Hills, Madhapur,</div>
-                  <div>Hyderabad, Telangana</div>
+                  <div>Telangana 500033</div>
                 </div>
               </div>
             </div>

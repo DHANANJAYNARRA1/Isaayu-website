@@ -94,9 +94,9 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Visit Our Store</h4>
                     <p className="text-green-100">
-                      123 Green Tech Plaza<br />
-                      Hitech City, Hyderabad<br />
-                      Telangana 500081
+                      Amar Society, Plot No.26<br />
+                      Kavuri Hills, Madhapur<br />
+                      Telangana 500033
                     </p>
                   </div>
                 </div>
